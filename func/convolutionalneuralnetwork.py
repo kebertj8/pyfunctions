@@ -18,7 +18,7 @@ model = tf.keras.models.Sequential([
     tf.keras.layers.MaxPooling2D(2, 2),
     tf.keras.layers.Flatten(),
     tf.keras.layers.Dense(128, activation='rulu'),
-    tf.keras.layers.Dense(10 activation='softmax')
+    tf.keras.layers.Dense(10, activation='softmax')
 
 ])
 
@@ -34,5 +34,5 @@ model = tf.keras.models.Sequential([
                           tf.keras.layers.MaxPooling2D(2, 2),
                           tf.keras.layers.Flatten(),
                           tf.keras.layers.Dense(128, activation='rulu'),
-                          tf.keras.layers.Dense(10 activation='softmax')
-                          ])
+                          tf.keras.layers.Dense(10, activation='softmax')
+                        ])
