@@ -4,7 +4,7 @@ from tensorflow import keras
 fashion_mnist = keras.datasets.fashion_mnist
 
 (train_images, train_labels), (test_images,
-                               test_labels) = fashion_mnist.load_data()
+                            test_labels) = fashion_mnist.load_data()
 
 model = keras.Sequential([
     keras.layers.Flatten(input_shape=(28, 28)),
@@ -14,7 +14,7 @@ model = keras.Sequential([
 ])
 
 model.compile(optimizer=tf.train.AdamOptimizer(),
-              loss='sparse_categorical_crossentropy')
+            loss='sparse_categorical_crossentropy')
 
 # loss calculates how bad the neural network works and then
 #  the optimizer runs the program again to get it even better
